@@ -1,17 +1,18 @@
 
 from groot.helper_functions import HelperFunctions
-import subprocess
-
+import os
+import click
 
 class Groot(HelperFunctions):
     @staticmethod
-    def run():
+    @click.command()
+    @click.option("--schema", required=True, type=str, help="the schema to use")
+    def run(schema):
 
-        arguments = ['pwd']
-        path = subprocess.check_output(arguments)
-        #schema = HelperFunctions().read_yaml_file(f"{path}/groot/schemas/character.yml")
+        path = os.getcwd()
+        file = f"""{path}/groot/schemas/{schema}.yml"""
+        schema_file = HelperFunctions().read_yaml_file(file)
 
-
-        #print(schema)
+        print(schema_file)
         print(HelperFunctions().generate_test_data(2))
 
