@@ -1,0 +1,12 @@
+---
+character:
+  id:
+    type: int
+    unique: true
+    nullable: false
+    meta: the unique id
+  name:
+    type: string
+    unique: false
+    nullable: false
+    meta: the character's name
