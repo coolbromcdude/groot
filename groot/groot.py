@@ -1,8 +1,11 @@
 
-from groot.helper_functions import HelperFunctions
-import os
-import click
 import csv
+import os
+
+import click
+
+from groot.helper_functions import HelperFunctions
+
 
 class Groot(HelperFunctions):
     @staticmethod
@@ -17,7 +20,7 @@ class Groot(HelperFunctions):
         schema_file = HelperFunctions().read_schema_file(file)
         header = []
         for k, v in schema_file.items():
-            for k1, v1 in v.items():
+            for k1, _ in v.items():
                 header.append(k1)
 
         data = HelperFunctions().generate_test_data(records)

@@ -1,8 +1,9 @@
-import yaml
 import random
 
+import yaml
 
-class HelperFunctions(object):
+
+class HelperFunctions:
 
     @staticmethod
     def read_schema_file(filename):
