@@ -2,8 +2,8 @@
 
 Groot can generate all kinds of test data, fast, in large quantities and in multiple formats.
 
-* Create custom JSON formatted schemas and generate data
-* Output large amounts of data to storage quickly
+* Define custom schemas to form the test data
+* Output test data in multiple formats
 
 ## Setup 
 
