@@ -4,7 +4,8 @@ import random
 
 class HelperFunctions(object):
 
-    def read_yaml_file(self, filename):
+    @staticmethod
+    def read_schema_file(filename):
         with open(filename, 'r') as stream:
             try:
                 schema = yaml.safe_load(stream)
