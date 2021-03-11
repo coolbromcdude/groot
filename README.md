@@ -42,7 +42,7 @@ make test
 ```
 
 ## Running the application
-#####Example 1:  Output 5000 records in csv format using the character schema
+#### Example 1:  Output 5000 records in csv format using the character schema
 ```shell
 python3 -m groot --schema character --records 5000 --output-format csv
 ```
