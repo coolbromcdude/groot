@@ -9,12 +9,12 @@ Groot can generate all kinds of test data, fast, in large quantities and in mult
 
 Install [pipenv](https://pipenv-fork.readthedocs.io/en/latest/basics.html) to setup virtual environment and manage package dependencies (run and dev) for the project.
 
-#### Installing with homebrew
+#### Installing pipenv
 ```shell
+# homebrew
 brew install pipenv
-```
-#### Installing with pip
-```shell
+
+#pip
 pip3 install pipenv
 ```
 
